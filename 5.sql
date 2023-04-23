@@ -1,9 +1,8 @@
 use classicmodels;
 
-SELECT country, SUM(creditLimit) as total_credit
+SELECT country, COUNT(*) as total_customers
 FROM customers
 GROUP BY country
-
 
 
   
